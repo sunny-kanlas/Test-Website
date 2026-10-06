@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · Bihar Studio</title>
+  <meta name="description" content="Get a free quote for your photo shoot." />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '29021832257441205');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=29021832257441205&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><span class="brand-mark">B</span> Bihar Studio</a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section narrow">
+    <h1>Get a free quote</h1>
+    <p class="lead">Tell us about your shoot and we'll reply with a price.</p>
+
+    <form class="form" id="lead-form" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" name="name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+      </div>
+      <div class="field">
+        <label for="service">Service</label>
+        <select id="service" name="service">
+          <option>Portrait session</option>
+          <option>Product shoot</option>
+          <option>Wedding day</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message (optional)</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+      <button class="btn btn-primary" type="submit">Request my quote</button>
+      <p class="muted small">This is a test form: nothing is sent or stored. Submitting it opens the thank-you page, which sends the <strong>Lead</strong> event.</p>
+    </form>
+
+    <p class="muted">Prefer to talk? <a href="tel:+910000000000" data-pixel-event="Contact">Call us</a> (sends the <strong>Contact</strong> event).</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span data-year></span> Bihar Studio · Patna, Bihar</span>
+      <span class="muted">Test website for the Meta pixel</span>
+    </div>
+  </footer>
+
+  <!-- Shows which pixel events this page sent (testing only) -->
+  <aside class="pixel-log" aria-live="polite">
+    <button type="button" class="pixel-log-toggle" aria-expanded="false">Pixel events <span class="pixel-log-count">0</span></button>
+    <ol class="pixel-log-list" hidden></ol>
+  </aside>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
