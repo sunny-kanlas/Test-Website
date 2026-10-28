@@ -120,6 +120,11 @@
     if (service) {
       storage('remove');
       track('Lead', { content_name: service });
+      // Google Analytics: count the lead and record which service was chosen
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'generate_lead', { service: service });
+        log('GA generate_lead ' + JSON.stringify({ service: service }));
+      }
       leadNote.textContent = 'Lead event sent for "' + service + '".';
     } else {
       leadNote.textContent = 'No Lead event: this page was opened directly, not from the form.';
