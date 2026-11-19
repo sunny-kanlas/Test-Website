@@ -1,0 +1,20 @@
+# Saffron Café & Kitchen
+
+> Casual dining café and Bihari restaurant on Boring Road, Patna, Bihar. Specialty coffee and all-day breakfast in the morning, Bihari thalis at lunch, and a full dinner menu in the evening. Open every day from 8 am to 11 pm. Table reservations online or by phone.
+
+Saffron Café & Kitchen brings specialty coffee and authentic Bihari food under one roof. Everything is cooked fresh daily with local ingredients, vegetarian dishes are prepared separately, and birthdays and office parties can be hosted in a private area.
+
+- Address: Boring Road, Patna, Bihar 800001, India
+- Phone: +91 91220 60237
+- Opening hours: Monday to Sunday, 08:00–23:00 (breakfast & coffee 8 am–12 pm, lunch & evening snacks 12–7 pm, dinner 7–11 pm)
+- Price range: ₹300–₹800 per person
+- Cuisine: Café, Bihari, Indian
+- Known for: Litti chokha, Champaran mutton, sattu paratha, Bihari thali, cold brew coffee, masala chai, thekua with ice cream
+- Languages: Hindi, English, Bhojpuri
+- Founded: 2024
+
+## Pages
+
+- [Home](https://sunny-kanlas.github.io/Test-Website/): About the café, why guests come back, and opening hours
+- [Menu](https://sunny-kanlas.github.io/Test-Website/menu.html): Set menus (breakfast & coffee ₹349, Bihari thali ₹449, dinner for two ₹1,499) and the full menu with prices
+- [Reserve a table](https://sunny-kanlas.github.io/Test-Website/contact.html): Book for breakfast, lunch, dinner or a private party; pick a date, time and number of guests
