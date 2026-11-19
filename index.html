@@ -24,6 +24,43 @@
   <meta name="google-site-verification" content="HMlQKRGR2gHqSVllEA6PoarJx3rZEsCc93MlxW3Wcv4" />
   <link rel="stylesheet" href="css/style.css" />
 
+  <!-- Schema markup: tells Google this is a restaurant, with its address, hours and prices -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Saffron Café & Kitchen",
+    "url": "https://sunny-kanlas.github.io/Test-Website/",
+    "telephone": "+91-9122060237",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Boring Road",
+      "addressLocality": "Patna",
+      "addressRegion": "Bihar",
+      "postalCode": "800001",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 25.595176,
+      "longitude": 85.1288796
+    },
+    "servesCuisine": ["Café", "Bihari", "Indian"],
+    "priceRange": "₹300–₹800",
+    "hasMenu": "https://sunny-kanlas.github.io/Test-Website/menu.html",
+    "acceptsReservations": "https://sunny-kanlas.github.io/Test-Website/contact.html",
+    "foundingDate": "2024",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -103,14 +140,14 @@
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="contact.html">Reserve a table</a>
-        <a class="btn btn-ghost" href="tel:+910000000000" data-pixel-event="Contact">Call us</a>
+        <a class="btn btn-ghost" href="tel:+919122060237" data-pixel-event="Contact">Call us</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <span>© <span data-year></span> Saffron Café &amp; Kitchen · Boring Road, Patna</span>
+      <span>© <span data-year></span> Saffron Café &amp; Kitchen · Boring Road, Patna 800001 · <a href="tel:+919122060237">+91 91220 60237</a></span>
       <span class="muted">Test website for the Meta pixel</span>
     </div>
   </footer>
