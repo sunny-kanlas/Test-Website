@@ -221,14 +221,15 @@ a {
   box-shadow: var(--shadow);
 }
 
+/* Coffee, greens and saffron: placeholders for food photos */
 .f1 {
   inset: 0 30% 25% 0;
-  background: linear-gradient(135deg, #e9b48f, #b4532a);
+  background: radial-gradient(circle at 50% 50%, #f1e3cf 0 22%, #6b3e26 23% 40%, #3b2216 41%);
 }
 
 .f2 {
   inset: 20% 0 0 35%;
-  background: linear-gradient(135deg, #7a9e9f, #2f4f50);
+  background: radial-gradient(circle at 50% 50%, #e9b44c 0 18%, #f7f1e6 19% 46%, #5c7c4b 47%);
 }
 
 .f3 {
@@ -276,6 +277,33 @@ a {
   color: var(--text) !important;
 }
 
+/* Menu */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 40px;
+  margin: 40px 0 16px;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+}
+
+.menu-list li span:last-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 .cta {
   display: flex;
   align-items: center;
@@ -302,6 +330,16 @@ a {
 .field {
   display: grid;
   gap: 6px;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 0.8fr;
+  gap: 12px;
+}
+
+.actions-center {
+  justify-content: center;
 }
 
 label {
@@ -402,8 +440,17 @@ textarea:focus {
 /* Small screens */
 @media (max-width: 760px) {
   .hero-grid,
-  .cards {
+  .cards,
+  .menu-grid {
     grid-template-columns: 1fr;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .field-row .field:first-child {
+    grid-column: 1 / -1;
   }
 
   .hero-art {

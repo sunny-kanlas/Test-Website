@@ -19,8 +19,8 @@
   </script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact · Bihar Studio</title>
-  <meta name="description" content="Get a free quote for your photo shoot." />
+  <title>Reserve a table · Saffron Café &amp; Kitchen</title>
+  <meta name="description" content="Book a table for breakfast, lunch, dinner or a private party." />
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- Meta Pixel Code -->
@@ -48,18 +48,18 @@
   <!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
     <div class="container header-row">
-      <a class="brand" href="index.html"><span class="brand-mark">B</span> Bihar Studio</a>
+      <a class="brand" href="index.html"><span class="brand-mark">S</span> Saffron Café &amp; Kitchen</a>
       <nav class="nav" aria-label="Main">
         <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html" aria-current="page">Reserve</a>
       </nav>
     </div>
   </header>
 
   <main class="container section narrow">
-    <h1>Get a free quote</h1>
-    <p class="lead">Tell us about your shoot and we'll reply with a price.</p>
+    <h1>Reserve a table</h1>
+    <p class="lead">Pick a day and time and we'll confirm your table by phone.</p>
 
     <form class="form" id="lead-form" novalidate>
       <div class="field">
@@ -75,19 +75,34 @@
         <input id="phone" name="phone" type="tel" autocomplete="tel" required />
       </div>
       <div class="field">
-        <label for="service">Service</label>
+        <label for="service">Booking for</label>
         <select id="service" name="service">
-          <option>Portrait session</option>
-          <option>Product shoot</option>
-          <option>Wedding day</option>
+          <option>Breakfast &amp; coffee</option>
+          <option>Lunch</option>
+          <option>Dinner</option>
+          <option>Private party</option>
         </select>
       </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required />
+        </div>
+        <div class="field">
+          <label for="time">Time</label>
+          <input id="time" name="time" type="time" required />
+        </div>
+        <div class="field">
+          <label for="guests">Guests</label>
+          <input id="guests" name="guests" type="number" min="1" max="30" value="2" required />
+        </div>
+      </div>
       <div class="field">
-        <label for="message">Message (optional)</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <label for="message">Special requests (optional)</label>
+        <textarea id="message" name="message" rows="3" placeholder="Allergies, high chair, birthday cake…"></textarea>
       </div>
       <p class="form-error" id="form-error" role="alert" hidden></p>
-      <button class="btn btn-primary" type="submit">Request my quote</button>
+      <button class="btn btn-primary" type="submit">Reserve my table</button>
       <p class="muted small">This is a test form: nothing is sent or stored. Submitting it opens the thank-you page, which sends the <strong>Lead</strong> event.</p>
     </form>
 
@@ -96,7 +111,7 @@
 
   <footer class="site-footer">
     <div class="container footer-row">
-      <span>© <span data-year></span> Bihar Studio · Patna, Bihar</span>
+      <span>© <span data-year></span> Saffron Café &amp; Kitchen · Boring Road, Patna</span>
       <span class="muted">Test website for the Meta pixel</span>
     </div>
   </footer>

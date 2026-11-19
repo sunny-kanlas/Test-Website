@@ -1,4 +1,4 @@
-// Bihar Studio test site: sends Meta pixel events and lists them in the "Pixel events" panel.
+// Saffron Café test site: sends Meta pixel events and lists them in the "Pixel events" panel.
 // The base code in each page's <head> already sent PageView.
 (function () {
   'use strict';
@@ -71,23 +71,27 @@
     });
   });
 
-  // Services page: ViewContent on open, Schedule on "Book a visit"
+  // Menu page: ViewContent on open, Schedule on "Reserve a table"
   var bookButtons = document.querySelectorAll('[data-book]');
   if (bookButtons.length) {
-    track('ViewContent', { content_name: 'Services' });
+    track('ViewContent', { content_name: 'Menu' });
     bookButtons.forEach(function (btn) {
       btn.addEventListener('click', function () {
         track('Schedule', { content_name: btn.getAttribute('data-book') });
-        btn.textContent = 'Visit requested ✓';
+        btn.textContent = 'Table requested ✓';
         btn.disabled = true;
       });
     });
   }
 
-  // Contact form: validate, remember the lead, then open the thank-you page
+  // Reservation form: validate, remember the lead, then open the thank-you page
   var form = document.getElementById('lead-form');
   if (form) {
     var error = document.getElementById('form-error');
+    // Local date as YYYY-MM-DD, so tables can't be booked in the past
+    var now = new Date();
+    var today = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    form.elements.namedItem('date').min = today;
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       // form.elements, not form.name: a form's own `name` property hides the "name" input
@@ -95,13 +99,22 @@
       var name = fields.namedItem('name').value.trim();
       var email = fields.namedItem('email').value.trim();
       var phone = fields.namedItem('phone').value.trim();
+      var date = fields.namedItem('date').value;
+      var time = fields.namedItem('time').value;
+      var guests = Number(fields.namedItem('guests').value);
       var problem = !name
         ? 'Enter your name.'
         : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
           ? 'Enter a valid email.'
           : phone.replace(/\D/g, '').length < 10
             ? 'Enter a phone number with at least 10 digits.'
-            : '';
+            : !date || date < today
+              ? 'Pick today or a later date.'
+              : !time
+                ? 'Pick a time.'
+                : !(guests >= 1 && guests <= 30)
+                  ? 'Enter between 1 and 30 guests.'
+                  : '';
       if (problem) {
         error.textContent = problem;
         error.hidden = false;
