@@ -15,6 +15,10 @@ Saffron Café & Kitchen brings specialty coffee and authentic Bihari food under 
 
 ## Pages
 
-- [Home](https://sunny-kanlas.github.io/Test-Website/): About the café, why guests come back, and opening hours
-- [Menu](https://sunny-kanlas.github.io/Test-Website/menu.html): Set menus (breakfast & coffee ₹349, Bihari thali ₹449, dinner for two ₹1,499) and the full menu with prices
-- [Reserve a table](https://sunny-kanlas.github.io/Test-Website/contact.html): Book for breakfast, lunch, dinner or a private party; pick a date, time and number of guests
+- [Home](https://sunny-kanlas.github.io/Test-Website/): About the café, why guests come back, opening hours and FAQ
+- [Menu](https://sunny-kanlas.github.io/Test-Website/menu-patna.html): Set menus (breakfast ₹349, Bihari thali ₹449, dinner for two ₹1,499), the full menu with prices and menu FAQ
+- [Table booking](https://sunny-kanlas.github.io/Test-Website/table-booking.html): Book for breakfast, lunch, dinner or a private party; pick a date, time and number of guests
+- [Home delivery](https://sunny-kanlas.github.io/Test-Website/home-delivery.html): Order online on Zomato or Swiggy, or by phone; delivery area and hours
+- [Contact & private dining](https://sunny-kanlas.github.io/Test-Website/contact-patna.html): Phone, address, map and private events for up to 30 guests
+- [Our story](https://sunny-kanlas.github.io/Test-Website/about.html): How the café started, the kitchen and the coffee
+- [Blog](https://sunny-kanlas.github.io/Test-Website/blog.html): Meet the chef, and the story behind litti chokha

@@ -54,12 +54,16 @@
   }
   log('PageView (base code)');
 
-  // After the page loads, tell whether Meta's library actually loaded (ad blockers stop it)
+  // The tag libraries load on the first tap/scroll/key press or a few seconds after load (see the <head>).
+  // Once they had time to arrive, tell whether Meta's library actually loaded (ad blockers stop it).
   window.addEventListener('load', function () {
     setTimeout(function () {
-      var loaded = window.fbq && window.fbq.instance;
-      log(loaded ? 'Pixel library loaded ✓' : 'Pixel library blocked: turn off your ad blocker to test', loaded ? 'info' : 'error');
-    }, 1500);
+      if (typeof window.loadTags === 'function') window.loadTags();
+      setTimeout(function () {
+        var loaded = window.fbq && window.fbq.instance;
+        log(loaded ? 'Pixel library loaded ✓' : 'Pixel library blocked: turn off your ad blocker to test', loaded ? 'info' : 'error');
+      }, 2500);
+    }, 4000);
   });
 
   // --- Events -----------------------------------------------------------------------------

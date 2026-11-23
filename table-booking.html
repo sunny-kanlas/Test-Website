@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saffron Café &amp; Kitchen Table Booking</title>
+  <meta name="description" content="Saffron Café &amp; Kitchen table booking in Patna: reserve a table for breakfast, lunch, dinner or a private party online. We call you to confirm." />
+  <link rel="canonical" href="https://sunny-kanlas.github.io/Test-Website/table-booking.html" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Analytics (G-R2PZ32QTNS), Google Tag Manager (GTM-NVT9N6S4) and the Meta pixel.
+       Events queue straight away; the libraries load on the first tap, scroll or key press, or 3.5 s after
+       the page has loaded, so they do not slow down the first view. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R2PZ32QTNS');
+    !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[]}(window);
+    fbq('init', '29021832257441205');
+    fbq('track', 'PageView');
+    (function (delay) {
+      var started = false;
+      function loadTags() {
+        if (started) return;
+        started = true;
+        [
+          'https://www.googletagmanager.com/gtm.js?id=GTM-NVT9N6S4',
+          'https://www.googletagmanager.com/gtag/js?id=G-R2PZ32QTNS',
+          'https://connect.facebook.net/en_US/fbevents.js'
+        ].forEach(function (src) {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = src;
+          document.head.appendChild(script);
+        });
+      }
+      window.loadTags = loadTags;
+      ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(function (type) {
+        window.addEventListener(type, loadTags, { once: true, passive: true });
+      });
+      window.addEventListener('load', function () { setTimeout(loadTags, delay); });
+    })(3500);
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=29021832257441205&ev=PageView&noscript=1" /></noscript>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sunny-kanlas.github.io/Test-Website/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Table booking",
+      "item": "https://sunny-kanlas.github.io/Test-Website/table-booking.html"
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NVT9N6S4"
+  height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span> Saffron Café &amp; Kitchen</a>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="menu-patna.html">Menu</a>
+        <a href="home-delivery.html">Delivery</a>
+        <a href="about.html">Our story</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact-patna.html">Contact</a>
+        <a href="table-booking.html" aria-current="page">Reserve</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section narrow">
+    <h1>Saffron Café &amp; Kitchen table booking</h1>
+    <p class="lead">Pick a day and time and we'll confirm your reservation by phone within the hour. Booking is free, and walk-ins are always welcome at the restaurant.</p>
+
+    <form class="form" id="lead-form" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input id="name" name="name" autocomplete="name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+      </div>
+      <div class="field">
+        <label for="service">Booking for</label>
+        <select id="service" name="service">
+          <option>Breakfast &amp; coffee</option>
+          <option>Lunch</option>
+          <option>Dinner</option>
+          <option>Private party</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="date">Date</label>
+          <input id="date" name="date" type="date" required />
+        </div>
+        <div class="field">
+          <label for="time">Time</label>
+          <input id="time" name="time" type="time" required />
+        </div>
+        <div class="field">
+          <label for="guests">Guests</label>
+          <input id="guests" name="guests" type="number" min="1" max="30" value="2" required />
+        </div>
+      </div>
+      <div class="field">
+        <label for="message">Special requests (optional)</label>
+        <textarea id="message" name="message" rows="3" placeholder="Allergies, high chair, birthday cake…"></textarea>
+      </div>
+      <p class="form-error" id="form-error" role="alert" hidden></p>
+      <button class="btn btn-primary" type="submit">Reserve my table</button>
+      <p class="muted small">This is a test form: nothing is sent or stored. Submitting it opens the thank-you page, which sends the <strong>Lead</strong> event.</p>
+    </form>
+
+    <h2>Good to know</h2>
+    <p>Tables for weekend brunch fill up first, so book a day ahead. For 10 or more guests, birthdays or office parties, see <a href="contact-patna.html">private dining</a>.</p>
+    <p class="muted">Prefer to talk? <a href="tel:+919122060237" data-pixel-event="Contact">Call us</a> (sends the <strong>Contact</strong> event).</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span data-year></span> Saffron Café &amp; Kitchen · Bihari restaurant &amp; café, Boring Road, Patna, Bihar 800001 · Reservations: <a href="tel:+919122060237">+91 91220 60237</a></span>
+      <span class="muted">Test website for the Meta pixel</span>
+    </div>
+  </footer>
+
+  <!-- Shows which pixel events this page sent (testing only) -->
+  <aside class="pixel-log" aria-live="polite">
+    <button type="button" class="pixel-log-toggle" aria-expanded="false">Pixel events <span class="pixel-log-count">0</span></button>
+    <ol class="pixel-log-list" hidden></ol>
+  </aside>
+
+  <script src="js/site.js"></script>
+</body>
+</html>
